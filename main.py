@@ -1,4 +1,5 @@
 import os
+import json
 
 from dotenv import load_dotenv
 from openai import OpenAI
@@ -14,6 +15,11 @@ client = OpenAI(api_key=os.getenv("OPENAI_API_KEYS"), project=os.environ.get("OP
 # TODO: Define the initial messages
 print("Initializing messages:")
 messages = []
+
+# TODO Define the tool specifications
+tools = [
+
+]
 
 # TODO: Make the request to openai, use the model "gpt-3.5-turbo"
 print("Making the first request:")
